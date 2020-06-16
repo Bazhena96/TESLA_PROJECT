@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200616 18:17:11.402" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/bazhenakashchuk/eclipse-workspace/TESLA" id="s1" name="TESLA">
+<suite source="/Users/bazhenakashchuk/eclipse-workspace/TESLA/Suite" id="s1-s1" name="Suite">
+<suite source="/Users/bazhenakashchuk/eclipse-workspace/TESLA/Suite/GeneralTests.robot" id="s1-s1-s1" name="GeneralTests">
+<test id="s1-s1-s1-t1" name="User Load Page">
+<kw name="Open and Load" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>chrome</arg>
+<arg>executable_path=/usr/local/Caskroom/chromedriver/83.0.4103.39/chromedriver</arg>
+</arguments>
+<msg timestamp="20200616 18:17:11.807" level="INFO">Opening browser 'firefox' to base url 'chrome'.</msg>
+<msg timestamp="20200616 18:17:11.811" level="INFO">Firefox driver log is always forced to to: /Users/bazhenakashchuk/eclipse-workspace/TESLA/geckodriver-1.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200616 18:17:12.858" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200616 18:17:12.859" starttime="20200616 18:17:12.856"></status>
+</kw>
+<msg timestamp="20200616 18:17:12.866" level="FAIL">WebDriverException: Message: Service /usr/local/Caskroom/chromedriver/83.0.4103.39/chromedriver unexpectedly exited. Status code was: 1
+</msg>
+<status status="FAIL" endtime="20200616 18:17:12.867" starttime="20200616 18:17:11.806"></status>
+</kw>
+<status status="FAIL" endtime="20200616 18:17:12.868" starttime="20200616 18:17:11.805"></status>
+</kw>
+<status status="FAIL" endtime="20200616 18:17:12.868" critical="yes" starttime="20200616 18:17:11.804">WebDriverException: Message: Service /usr/local/Caskroom/chromedriver/83.0.4103.39/chromedriver unexpectedly exited. Status code was: 1
+</status>
+</test>
+<test id="s1-s1-s1-t2" name="User Select The Market">
+<kw name="Open and Load" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>chrome</arg>
+<arg>executable_path=/usr/local/Caskroom/chromedriver/83.0.4103.39/chromedriver</arg>
+</arguments>
+<msg timestamp="20200616 18:17:12.873" level="INFO">Opening browser 'firefox' to base url 'chrome'.</msg>
+<msg timestamp="20200616 18:17:12.874" level="INFO">Firefox driver log is always forced to to: /Users/bazhenakashchuk/eclipse-workspace/TESLA/geckodriver-2.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200616 18:17:13.890" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200616 18:17:13.891" starttime="20200616 18:17:13.887"></status>
+</kw>
+<msg timestamp="20200616 18:17:13.893" level="FAIL">WebDriverException: Message: Service /usr/local/Caskroom/chromedriver/83.0.4103.39/chromedriver unexpectedly exited. Status code was: 1
+</msg>
+<status status="FAIL" endtime="20200616 18:17:13.893" starttime="20200616 18:17:12.873"></status>
+</kw>
+<status status="FAIL" endtime="20200616 18:17:13.895" starttime="20200616 18:17:12.871"></status>
+</kw>
+<status status="FAIL" endtime="20200616 18:17:13.896" critical="yes" starttime="20200616 18:17:12.870">WebDriverException: Message: Service /usr/local/Caskroom/chromedriver/83.0.4103.39/chromedriver unexpectedly exited. Status code was: 1
+</status>
+</test>
+<status status="FAIL" endtime="20200616 18:17:13.898" starttime="20200616 18:17:11.492"></status>
+</suite>
+<status status="FAIL" endtime="20200616 18:17:13.902" starttime="20200616 18:17:11.490"></status>
+</suite>
+<status status="FAIL" endtime="20200616 18:17:13.904" starttime="20200616 18:17:11.463"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="TESLA" pass="0">TESLA</stat>
+<stat fail="2" id="s1-s1" name="Suite" pass="0">TESLA.Suite</stat>
+<stat fail="2" id="s1-s1-s1" name="GeneralTests" pass="0">TESLA.Suite.GeneralTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
