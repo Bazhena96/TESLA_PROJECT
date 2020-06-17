@@ -13,11 +13,15 @@ Sign In
     Wait Until Page Contains Element  css=.tds-menu-header-nav--primary_right > li:nth-child(2) > a:nth-child(1)
     Mouse Down  css=.tds-menu-header-nav--primary_right > li:nth-child(2) > a:nth-child(1)
     Click Element  css=.tds-menu-header-nav--primary_right > li:nth-child(2) > a:nth-child(1)
-    Wait Until Page Contains Element  css=#email
-    Input Text  css=#form-input-identity  ${USER_EMAIL}
+    Click Element  css=#email
+    Input Text  css=#email  ${USER_EMAIL}
+    Wait Until Page Contains Element  css=#submit-button
+    Click Element  css=#submit-button
     Wait Until Page Contains Element  css=#form-input-credential
     Input Password  css=#form-input-credential   ${USER_PASSWORD}
     Wait Until Page Contains Element  css=#submit-button
+    Click Element  css=#submit-button
 Dismiss Alert
-    Click Element  css=#locale-modal > div:nth-child(1) > div:nth-child(1) > button:nth-child(2)
+    Wait Until Page Contains Element  css=#locale-modal-close
+    Click Element  css=#locale-modal-close
     
