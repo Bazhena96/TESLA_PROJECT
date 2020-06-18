@@ -18,7 +18,7 @@ Sign In
     Input Password  css=#form-input-credential   ${USER_PASSWORD}
     Wait Until Page Contains Element  css=#form-submit-continue
     Click Element  css=#form-submit-continue
-Dismiss Alert
+Close Alert
     Wait Until Page Contains Element  css=#locale-modal-close
     Click Element  css=#locale-modal-close
 Search The Product
@@ -46,5 +46,7 @@ Verify That Product Add To Cart
     Click Element  css=.nav-cart > button:nth-child(1)
     Wait Until Page contains  Your Cart(1)
     Page Should Contain  Your Cart(1)
-    
+Dismiss Alert
+    ${BUTTON_COUNTS} =  GET ELEMENT COUNT  css=.locale-main-header
+    Run Keyword if  ${BUTTON_COUNTS}>0  Close Alert 
     
