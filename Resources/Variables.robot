@@ -1,7 +1,5 @@
 ***Variables***
 ${USER_EMAIL}  bazhenkak@gmail.com
-${USER_PASSWORD}  123456789
+${USER_PASSWORD}  change13
 ${PRODUCT_1}  Hoodie
-${PRODUCT_2}  Wordmark Tee
-${PRODUCT_3}  Powerwall Tee
 
