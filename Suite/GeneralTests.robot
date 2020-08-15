@@ -2,25 +2,25 @@
 Library  SeleniumLibrary
 Resource  ../Resources/Keywords.robot
 *** Test Cases ***
-User Load Page
+User load page
     Open and Load
-User Select The Market
+User select the market
     Open and Load
     Select The Market
     Close Browser
-User Sign In to Account
+User sign in to account
     Open and Load
     Dismiss Alert
     Sign In  bazhenkak@gmail.com  change13
     Close Browser
-User Search The Product
+User search the product
     Open and Load
     Dismiss Alert
     Sign In  bazhenkak@gmail.com  change13
     Search The Product   Hoodie
     Verify That Search Completed
     Close Browser
-User Adds Product To Cart
+User adds product to the cart
     Open and Load
     Dismiss Alert
     Sign In  bazhenkak@gmail.com  change13
@@ -29,7 +29,7 @@ User Adds Product To Cart
     User Select One Of The Results
     Choose The Product Size
     Adds Product
-    Verify That Product Add To Cart
+    Verify That Product Add To The Cart
     Close Browser
     
     
