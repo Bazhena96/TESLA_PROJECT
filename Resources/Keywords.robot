@@ -26,7 +26,6 @@ Search The Product
     [Arguments]  ${product name}
     Wait And Click  css=li.tds-header-nav--list_item_last:nth-child(18) > ol:nth-child(1) > li:nth-child(1) > a:nth-child(1)
     Wait And Click  css=#tds-header-main > div > div > label.mobile-view > span
-    Wait Until Page Contains Element  css=#searchTerm
     Wait And Click  css=#searchTerm
     Input Text  css=#searchTerm  ${product name}
     Press Keys  css=#searchform > label > i  ENTER
