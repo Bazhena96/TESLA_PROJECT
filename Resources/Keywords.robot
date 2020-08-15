@@ -43,7 +43,7 @@ Adds Product
 Choose The Product Size
     Wait Until Page Contains Element  css=div.product-form:nth-child(2) > div:nth-child(1) > section:nth-child(1) > ul:nth-child(3) > li:nth-child(1) > label:nth-child(2)
     Click Element  css=div.product-form:nth-child(2) > div:nth-child(1) > section:nth-child(1) > ul:nth-child(3) > li:nth-child(1) > label:nth-child(2)
-Verify That Product Add To Cart
+Verify That Product Add To The Cart
     Wait Until Page Contains Element  css=.nav-cart > button:nth-child(1)
     Click Element  css=.nav-cart > button:nth-child(1)
     Wait Until Page contains  Your Cart(1)
