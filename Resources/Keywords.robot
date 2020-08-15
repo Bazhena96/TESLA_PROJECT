@@ -1,8 +1,7 @@
-***Settings***
+*** Settings ***
 Library  SeleniumLibrary
-Resource  Variables.robot
 
-***Keywords***
+*** Keywords ***
 Open and Load
     Open Browser  https://www.tesla.com  chrome  executable_path=/usr/local/Caskroom/chromedriver/83.0.4103.39/chromedriver
     Set Browser Implicit Wait  5
@@ -10,25 +9,27 @@ Select The Market
     Wait Until Page Contains Element  css=#locale-modal-close
     Click Element  css=#locale-modal-close
 Sign In
+    [Arguments]  ${user email}  ${user password}
     Wait Until Page Contains Element  css=.tds-menu-header-nav--primary_right > li:nth-child(2) > a:nth-child(1)
     Mouse Down  css=.tds-menu-header-nav--primary_right > li:nth-child(2) > a:nth-child(1)
     Click Element  css=.tds-menu-header-nav--primary_right > li:nth-child(2) > a:nth-child(1)
     Click Element  css=#form-input-identity
-    Input Text  css=#form-input-identity  ${USER_EMAIL}
-    Input Password  css=#form-input-credential   ${USER_PASSWORD}
+    Input Text  css=#form-input-identity  ${user email}
+    Input Password  css=#form-input-credential   ${user password}
     Wait Until Page Contains Element  css=#form-submit-continue
     Click Element  css=#form-submit-continue
 Close Alert
     Wait Until Page Contains Element  css=#locale-modal-close
     Click Element  css=#locale-modal-close
 Search The Product
+    [Arguments]  ${product name}
     Wait Until Page Contains Element  css=li.tds-header-nav--list_item_last:nth-child(18) > ol:nth-child(1) > li:nth-child(1) > a:nth-child(1)
     Click Element  css=li.tds-header-nav--list_item_last:nth-child(18) > ol:nth-child(1) > li:nth-child(1) > a:nth-child(1)
     Wait Until Page Contains Element  css=#tds-header-main > div > div > label.mobile-view > span
     Click Element  css=#tds-header-main > div > div > label.mobile-view > span
     Wait Until Page Contains Element  css=#searchTerm
     Click Element  css=#searchTerm
-    Input Text  css=#searchTerm  ${PRODUCT_1}
+    Input Text  css=#searchTerm  ${product name}
     Press Keys  css=#searchform > label > i  ENTER
 Verify That Search Completed
     Wait Until Page contains  Results for
