@@ -16,19 +16,17 @@ User sign in to account
 User search the product
     Load Page And Maximize Browser Window
     Dismiss Alert
-    Sign In  bazhenkak@gmail.com  change13
     Search The Product   Hoodie
     Verify That Search Completed
     Close Browser
 User adds product to the cart
     Load Page And Maximize Browser Window
     Dismiss Alert
-    Sign In  bazhenkak@gmail.com  change13
     Search The Product  Hoodie
     Verify That Search Completed
     User Select One Of The Results
     Choose The Product Size
-    Adds Product
+    Add Product
     Verify That Product Add To The Cart
     Close Browser
     
