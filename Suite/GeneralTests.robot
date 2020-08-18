@@ -3,25 +3,25 @@ Library  SeleniumLibrary
 Resource  ../Resources/Keywords.robot
 *** Test Cases ***
 User load page
-    Open and Load
+    Load Page And Maximize Browser Window
 User select the market
-    Open and Load
+    Load Page And Maximize Browser Window
     Select The Market
     Close Browser
 User sign in to account
-    Open and Load
+    Load Page And Maximize Browser Window
     Dismiss Alert
     Sign In  bazhenkak@gmail.com  change13
     Close Browser
 User search the product
-    Open and Load
+    Load Page And Maximize Browser Window
     Dismiss Alert
     Sign In  bazhenkak@gmail.com  change13
     Search The Product   Hoodie
     Verify That Search Completed
     Close Browser
 User adds product to the cart
-    Open and Load
+    Load Page And Maximize Browser Window
     Dismiss Alert
     Sign In  bazhenkak@gmail.com  change13
     Search The Product  Hoodie
