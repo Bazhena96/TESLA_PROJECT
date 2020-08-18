@@ -9,6 +9,9 @@ Wait And Click
     [Arguments]  ${locator}
     Wait Until Page Contains Element  ${locator}
     Click Element  ${locator}
+Load Page And Maximize Browser Window
+    Load Page
+    Maximize Browser Window
 Select The Market
     Wait And Click  css=#locale-modal-close
 Sign In
