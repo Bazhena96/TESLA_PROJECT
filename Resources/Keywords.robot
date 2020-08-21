@@ -1,6 +1,5 @@
 *** Settings ***
 Library  SeleniumLibrary
-
 *** Keywords ***
 Open and Load
     Open Browser  https://www.tesla.com  chrome  executable_path=/usr/local/Caskroom/chromedriver/83.0.4103.39/chromedriver
@@ -21,7 +20,7 @@ Sign In
     Wait And Click  css=.tds-menu-header-nav--primary_right > li:nth-child(2) > a:nth-child(1)
     Wait And Click  css=#form-input-identity
     Input Text  css=#form-input-identity  ${user email}
-    Input Password  css=#form-input-credential   ${user password}
+    Input Password  css=#form-input-credential  ${user password}
     Wait And Click  css=#form-submit-continue
 Close Alert
     Wait And Click  css=#locale-modal-close
@@ -43,6 +42,6 @@ Choose The Product Size
 Verify That Product Add To The Cart
     Wait Until Page Contains Element   css=.proceed-button
 Dismiss Alert
-    ${BUTTON_COUNTS} =  GET ELEMENT COUNT  css=.locale-main-header
-    Run Keyword if  ${BUTTON_COUNTS}>0  Close Alert 
+    ${button count} =  GET ELEMENT COUNT  css=.locale-main-header
+    Run Keyword if  ${button count}>0  Close Alert
     
