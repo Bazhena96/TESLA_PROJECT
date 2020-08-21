@@ -16,7 +16,7 @@ User sign in to account
 User search the product
     Load Page And Maximize Browser Window
     Dismiss Alert
-    Search The Product   Hoodie
+    Search The Product  Hoodie
     Verify That Search Completed
     Close Browser
 User adds product to the cart
